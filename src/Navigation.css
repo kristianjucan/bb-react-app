@@ -1,0 +1,98 @@
+
+
+.Navbar {
+  box-shadow: 16px 7px 48px -33px rgba(0, 0, 0, 0.75);
+}
+
+#user-photo {
+  width: 20px;
+}
+
+.Links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  background-color: whitesmoke;
+  margin: 0;
+  height: 100px;
+  position: static;
+}
+
+.Links a {
+  color: black;
+  text-decoration: none;
+  
+}
+
+ #login-logout {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100px;
+}
+
+.collapsible a{
+  color: black;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.Links #logo {
+  height: 100px;
+
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+.isOpen {
+  background-color: rgb(238, 235, 235);
+  width: 70px;
+  height: 100px;
+  position: absolute;
+  right: 5px;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.isClosed {
+  background-color: rgb(255, 255, 255);
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .Navbar .Links #dissapear {
+    display: none;
+  }
+
+}
+@media (min-width: 600px) {
+  .collapsible {
+    display: none;
+  }
+}
+
+.collapsible button {
+  height: 50px;
+  width: 50px;
+  border: 0px;
+  border-radius: 20%;
+  border: 1px solid grey;
+  font-size: x-small;
+}
+
+
+@media (max-width:600px) {
+  .collapsible button {
+    height: 50px;
+    width: 50px;
+    
+  }
+}

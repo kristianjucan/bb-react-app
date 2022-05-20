@@ -1,0 +1,173 @@
+body {
+  background-color: rgba(205, 205, 205, 0.247);
+  
+}
+
+.ProductCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  /* flex-wrap: wrap; */
+}
+
+/* .product-container {
+  width: 20rem;
+  height: 20rem;
+} */
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 2rem;
+}
+
+/* .products:last-of-type(div) {
+  align-self: flex-start;
+  justify-self: flex-start;
+} */
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  width: 20rem;
+  height: 22rem;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+
+
+.product button {
+  cursor: pointer;
+  border: 0px;
+  padding: 10px;
+}
+
+.product button:hover {
+  background-color: rgb(222, 244, 56);
+}
+
+.product img {
+  width: 10rem;
+  height: 8rem;
+  object-fit: scale-down;
+  margin-bottom: 20px;
+}
+
+.product p {
+  width: 15rem;
+  flex-wrap: wrap;
+}
+
+#route-link {
+  
+  text-decoration: none;
+  color: black;
+  
+}
+
+#rating {
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.product-buttons {
+  display: flex;
+  align-self: flex-end;
+  
+  
+}
+
+.product:hover {
+  box-shadow: 16px 7px 48px -33px rgba(0, 0, 0, 0.75);
+  transition: 0.2s;
+  transition-timing-function: ease-in-out 1s;
+}
+
+.product img:hover {
+  transition: 0.2s;
+  transition-timing-function: ease-in-out 1s;
+  transform: scale(1.1);
+}
+
+.categorySelector {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 50px;
+  margin-left: 4.5rem;
+}
+
+#category-list {
+  border: 0px;
+  padding: 20px;
+}
+
+@media(max-width: 850px ) {
+  .product {
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+  width: 80%;
+  height: 12rem;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 30px;
+  }
+  
+
+  .product img {
+    width: 8rem;
+  height: 6rem;
+  object-fit: scale-down;
+  margin-right: 20px ;
+  
+  }
+  
+
+  .product p{
+    width: 8rem;
+    overflow-x: hidden;
+  }
+}
+@media(max-width: 755px ) {
+  .product {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  
+  width: 70%;
+  height: 12rem;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 30px;
+  }
+  
+
+  .product img {
+    width: 4rem;
+  height: 6rem;
+  object-fit: scale-down;
+  margin-right: 20px ;
+  
+  }
+
+  .product p{
+    width: 8rem;
+    overflow-x: hidden;
+    font-size: small;
+  }
+}

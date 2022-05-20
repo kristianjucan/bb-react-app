@@ -1,0 +1,81 @@
+.CartCard {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    height:500px;
+    width: 300px;
+    overflow: hidden;
+    position: absolute;
+    right:5%;
+    top:100px;
+    border: 1px solid whitesmoke;
+    overflow-y: scroll; 
+    z-index: 15;
+}
+
+.CartCard .Total {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-self: center;
+    margin-top: 40px;
+    
+}
+
+.CartCard .Total button {
+    margin-top: 10px;
+}
+
+
+
+@media (max-width:600px) {
+    .CartCard {
+        right:15%;
+        height:250px;
+        width: 200px;
+    }
+}
+
+.cartItem {
+    height: 250px;
+    /* width:60%; */
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    /* text-align: center; */
+    padding: 10px;
+    border-bottom: 1px solid whitesmoke;  
+    
+}
+
+
+.cartItem img {
+    width:70px;
+}
+
+.cartButtons {
+    display: flex;
+    flex-direction: row;
+    height:20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+
+}
+.cartButtons button {
+
+    margin: 5px;
+    
+}
+
+
+.Total button {
+    padding: 7px;
+    background-color: white;
+    border: 1px solid grey;
+}
